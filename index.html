@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>WICKSUR</title>
+  <title>WICKSUR</title>
   <link rel="icon" type="image/x-icon" href="wicksur.png">
   <style>
     body {
       background-color: rgba(212, 220, 166, 0.1);
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
@@ -22,6 +22,21 @@
     }
     header h1 {
       margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
     }
     main {
       padding: 20px;
@@ -39,6 +54,14 @@
       max-width: 100%;
       height: auto;
     }
+    .card {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 20px;
+    }
     footer {
       text-align: center;
       padding: 10px;
@@ -54,24 +77,39 @@
     <h1><a href="http://wicksur.no">WICKSUR</a></h1>
   </header>
 
+  <nav>
+    <a href="#om-meg">Om meg</a>
+    <a href="#album">Album</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
   <main>
-    <section>
+    <section id="om-meg">
       <h2>Om meg</h2>
-      <p>Mitt navn er Geir og jeg liker klokker. For å lære mer om hvordan nettsider er laget legger jeg ut bilder av klokker i samlingen min, mods jeg bygger og vintage klokker jeg overhaller. </p>
+      <div class="card">
+        <p>Mitt navn er Geir og jeg liker klokker. For å lære mer om hvordan nettsider er laget legger jeg ut bilder av klokker i samlingen min, mods jeg bygger og vintage klokker jeg overhaller.</p>
+      </div>
     </section>
 
-<h2>Album</h2>
+    <section id="album">
+      <h2>Album</h2>
+      <div class="card">
+        <p><a href="http://wicksur.no/album">Mine favoritter</a></p>
+        <p><a href="http://wicksur.no/Mods">Mods</a></p>
+        <p><a href="http://wicksur.no/Vintage">Vintage</a></p>
+        <p><a href="http://wicksur.no/Mikromerker">Mikromerker</a></p>
+      </div>
+    </section>
 
-<p><a href="http://wicksur.no/album">Mine favoritter</a></p>
-<p><a href="http://wicksur.no/Mods">Mods</a></p>
-<p><a href="http://wicksur.no/Vintage">Vintage</a></p>
-<p><a href="http://wicksur.no/Mikromerker">Mikromerker</a></p>
+    <section>
+      <h2>Hemmelig lenke som kun vises for et fåtall besøkere</h2>
+      <div class="card">
+        <p><a href="http://wicksur.no/amidsbilde">Kun for det heldige fåtall</a></p>
+      </div>
+    </section>
+  </main>
 
-<h2>Hemmelig lenke som kun vises for et fåtall besøkere</h2>
-
-<p><a href="http://wicksur.no/amidsbilde">Kun for det heldige fåtall</a></p>
-
-  <footer>
+  <footer id="kontakt">
     <h4>Kontakt</h4>
     <p>Navn: Geir</p>
     <p>E-post: Nei takk, ikke helt enda.</p>

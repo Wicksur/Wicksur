@@ -1,127 +1,147 @@
 <!DOCTYPE html>
 <html lang="no">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WICKSUR</title>
-  <link rel="icon" type="image/x-icon" href="wicksur.png">
-  <style>
-    body {
-      background-color: rgba(212, 220, 166, 0.1);
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      text-align: center;
-      padding: 20px;
-      background-color: #f5ffbb;
-      border-bottom: 1px solid #ccc;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #333;
-    }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      text-align: center;
-    }
-    nav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-    main {
-      padding: 20px;
-    }
-    h2 {
-      color: #333;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-    .project {
-      margin-bottom: 40px;
-    }
-    .project img {
-      max-width: 100%;
-      height: auto;
-    }
-    .card {
-      background-color: white;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin: 20px;
-      padding: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #f5ffbb;
-      border-top: 1px solid #ccc;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wicksur</title>
+    <link rel="icon" type="image/x-icon" href="wicksur.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5dc; /* Lys beige bakgrunn */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #000000, #333333); /* Svart gradient */
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #d2b48c 3px solid; /* Lys brun kant */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+        .info {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .info h2 {
+            text-align: center;
+            color: #5a3d1a;
+        }
+        .clock-gallery {
+            margin-top: 20px;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category h2 {
+            text-align: center;
+            color: #5a3d1a;
+            margin-bottom: 20px;
+        }
+        .clocks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .clock {
+            background: #fff;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border: 1px solid #d2b48c; /* Lys brun kant */
+        }
+        .clock:hover {
+            transform: scale(1.05);
+        }
+        .clock img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .clock p {
+            margin: 10px 0 0;
+            font-size: 16px;
+            color: #333;
+        }
+        footer {
+            background: #000000; /* Svart bakgrunn */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
-
-  <header>
-    <h1><a href="http://wicksur.no">WICKSUR</a></h1>
-  </header>
-
-  <nav>
-    <a href="#om-meg">Om meg</a>
-    <a href="#album">Album</a>
-    <a href="#kontakt">Kontakt</a>
-  </nav>
-
-  <main>
-    <section id="om-meg">
-      <h2>Om meg</h2>
-      <div class="card">
-        <p>Mitt navn er Geir og jeg liker klokker. For å lære mer om hvordan nettsider er laget legger jeg ut bilder av klokker i samlingen min, mods jeg bygger og vintage klokker jeg overhaller.</p>
-      </div>
-    </section>
-
-    <section id="album">
-      <h2>Album</h2>
-      <div class="card">
-        <p><a href="http://wicksur.no/album">Mine favoritter</a></p>
-        <p><a href="http://wicksur.no/Mods">Mods</a></p>
-        <p><a href="http://wicksur.no/Vintage">Vintage</a></p>
-        <p><a href="http://wicksur.no/Mikromerker">Mikromerker</a></p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Hemmelig lenke som kun vises for et fåtall besøkere</h2>
-      <div class="card">
-        <p><a href="http://wicksur.no/amidsbilde">Kun for det heldige fåtall</a></p>
-      </div>
-    </section>
-    <section>
-      <h2>BETA</h2>
-      <div class="card">
-        <p><a href="http://wicksur.no/testnyside">BETA-Geir</a></p>
-      </div>
-    </section>
-    
-  </main>
-
-  <footer id="kontakt">
-    <h4>Kontakt</h4>
-    <p>Navn: Geir</p>
-    <p>E-post: Nei takk, ikke helt enda.</p>
-  </footer>
-
+    <header>
+        <h1>Wicksur</h1>
+    </header>
+    <div class="container">
+        <div class="info">
+            <h2>Om Wicksur</h2>
+            <p>Velkommen til Wicksur! Her kan du utforske en rekke klokker, fra vintage arbåndsur jeg har overhallet, til klokkemods som er til salgs. Vi håper du finner inspirasjon og glede i min samling.</p>
+        </div>
+        <div class="clock-gallery">
+            <div class="category">
+                <h2>Mods til salgs</h2>
+                <div class="clocks">
+                    <div class="clock">
+                        <a href="http://wicksur.no/Guinness.png"><img src="Guinness.png"></a>
+                        <p>Elegant klokke inspirert av Guinness øl med en håndlaget sort lærreim.</p>
+                    </div>
+                    <div class="clock">
+                        <img src="klokke2.jpg" alt="Klokke 2">
+                        <p>Sporty klokke med robust konstruksjon og vannmotstand.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h2>Vintage</h2>
+                <div class="clocks">
+                    <div class="clock">
+                        <img src="klokke3.jpg" alt="Klokke 3">
+                        <p>Klassisk lommeur med detaljerte graveringer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h2>Diverse</h2>
+                <div class="clocks">
+                    <div class="clock">
+                        <img src="klokke4.jpg" alt="Klokke 4">
+                        <p>Moderne veggklokke med stilrent design.</p>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>2024 Wicksur. Alle rettigheter reservert.</p>
+        <p>Kontakt:</p>
+        <p>E-post:Ikke helt klar</p>
+    </footer>
 </body>
-
 </html>

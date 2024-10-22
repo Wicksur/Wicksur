@@ -1,109 +1,170 @@
 <!DOCTYPE html>
 <html lang="no">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>WICKSUR</title>
-  <link rel="icon" type="image/x-icon" href="wicksur.png">
-  <style>
-    body {
-      background-color: rgba(212, 220, 166, 0.1);
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      text-align: center;
-      padding: 20px;
-      background-color: #f5ffbb;
-      border-bottom: 1px solid #ccc;
-    }
-    header h1 {
-      margin: 0;
-    }
-    main {
-      padding: 20px;
-    }
-    h2 {
-      color: #333;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-    .project {
-      margin-bottom: 40px;
-    }
-    .project img {
-      max-width: 100%;
-      height: auto;
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #f5ffbb;
-      border-top: 1px solid #ccc;
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <h1><a href="http://wicksur.no">WICKSUR</a></h1>
-  </header>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Album</title>
+    <title>Wicksur</title>
+    <link rel="icon" type="image/x-icon" href="wicksur.png">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5dc; /* Lys beige bakgrunn */
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
-        h1 {
-            color: #333;
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
-        .album {
+        header {
+            background: linear-gradient(90deg, #000000, #333333); /* Svart gradient */
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #d2b48c 3px solid; /* Lys brun kant */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+        .info {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .info h2 {
+            text-align: center;
+            color: #5a3d1a;
+        }
+        .clock-gallery {
+            margin-top: 20px;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category h2 {
+            text-align: center;
+            color: #5a3d1a;
+            margin-bottom: 20px;
+        }
+        .clocks {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
+            justify-content: space-around;
+        }
+        .clock {
+            background: #fff;
+            margin: 10px;
             padding: 20px;
-        }
-        .album img {
-            max-width: 200px;
-            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border: 1px solid #d2b48c; /* Lys brun kant */
         }
-        .album img:hover {
+        .clock:hover {
             transform: scale(1.05);
+        }
+        .clock img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .clock p {
+            margin: 10px 0 0;
+            font-size: 16px;
+            color: #333;
+        }
+        footer {
+            background: #000000; /* Svart bakgrunn */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Mods</h1>
-    <div class="album">
-        <a href="http://wicksur.no/RBK.png"><img src="RBK.png"></a>
-      <p>GMT Root Beer med en mørk versjon av Wave off Kanagawa-urskive.</p>
-        <a href="http://wicksur.no/Guinness.png"><img src="Guinness.png"></a>
-      <p>GMT inspirert av fargespillet til en Guinness.</p>
-
-        <!-- Add more images as needed -->
+    <header>
+        <h1>Wicksur</h1>
+    </header>
+    <div class="container">
+        <div class="info">
+            <h2>Om Wicksur</h2>
+            <p>Velkommen til Wicksur! Her kan du utforske en rekke klokker, fra vintage arbåndsur jeg har overhallet, til klokkemods som er til salgs. Vi håper du finner inspirasjon og glede i min samling.</p>
+        </div>
+        <div class="clock-gallery">
+            <div class="category">
+                <h2>Mods til salgs</h2>
+                <div class="clocks">
+                    <div class="clock">
+                            <a href="https://www.finn.no/bap/forsale/ad.html?finnkode=363365818" target="_blank">
+                                <img src="Guinness.png" alt="Klikk her for å kjøpe klokken">
+                            </a>
+                            <p><strong>Klikk på bildet for å kjøpe klokken!</strong></p>
+                        <p>Elegant klokke inspirert av Guinness øl med en håndlaget sort lærreim.</p>
+                    </div>
+                    <div class="clock">
+                            <a href="https://www.finn.no/recommerce/forsale/item/366521667" target="_blank">
+                                <img src="RBK.png" alt="Klikk her for å kjøpe klokken">
+                            </a>
+                            <p><strong>Klikk på bildet for å kjøpe klokken!</strong></p>
+                        <p>GMT Root Beer med en mørk versjon av Wave off Kanagawa-urskive.</p>
+                    </div>
+                        <div class="clock">
+                            <a href="https://www.finn.no/recommerce/forsale/item/376642721?" target="_blank">
+                                <img src="DatejustG.jpg" alt="Klikk her for å kjøpe klokken">
+                            </a>
+                            <p><strong>Klikk på bildet for å kjøpe klokken!</strong></p>
+                            <p>Stilig klokke som er trykkbestandig til 10 bar / 100 meter under vann. Jeg har bygget denne med tredjepartsdeler, rundt et originalt NH35a urverk fra Seiko. Ubrukt og fersk! Denne er inspirert av DJ two tone med gullfarget urskive, fluted bezel ring og krone.</p>
+                            <p>Her har du en klokke som varer lenger enn oss mennesker når den mottar vedlikehold et par ganger i tiåret. God kvalitet og veldig vakker finish på alle overflater. Urverket er Seiko NH35a og kommer med følgende funksjoner: Timer, minutter, sekunder, dato, hacking (klokken stopper mens du stiller den), manuelt håndopptrekk, og automatisk opptrekk mens du har den på håndleddet.</p>
+                            <p>Denne klokken kan brukes både til formelle anledninger og hverdag. Kanskje den perfekte gaven? Bestill med fiks ferdig eller kom innom og hent den. Jeg slår gjerne av en prat om klokker også!</p>
+                            <p>Spesifikasjoner:</p>
+                            <ul>
+                                <li>36mm u/ krone</li>
+                                <li>20mm lenke basert på jubilee</li>
+                                <li>Safirglass</li>
+                                <li>Innebygd hurtigjustering i spennen på lenken (Glidelock)</li>
+                                <li>Klokken kommer i en stilig boks</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            <div class="category">
+                <h2>Vintage</h2>
+                <div class="clocks">
+                    <div class="clock">
+                         <a href="http://wicksur.no/Longines.png"><img src="Longines.png"></a>
+                        <p>Longines Flagship med sentrert sekundviser. Denne tikker av gårde med et 30LS urverk.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h2>Diverse</h2>
+                <div class="clocks">
+                    <div class="clock">
+                        <a href="http://wicksur.no/kuoers.png"><img src="kuoers.png"></a>
+                        <p>KUOE Royal Smith 90-008.</p>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-      <footer>
-    <h4>Kontakt</h4>
-    <p>Navn: Geir</p>
-    <p>E-post: Nei takk, ikke helt enda.</p>
-  </footer>
-    
+    <footer>
+        <p>2024 Wicksur. En del av rettighetene er reservert.</p>
+        <p>Kontakt:</p>
+        <p>E-post:Ikke helt klar</p>
+    </footer>
 </body>
 </html>

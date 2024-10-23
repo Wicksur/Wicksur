@@ -94,7 +94,28 @@
             padding: 10px 0;
             margin-top: 20px;
         }
+	 .gallery {
+            width: 300px;
+            margin: auto;
+            text-align: center;
+        }
+        .gallery img {
+            width: 100%;
+            display: none;
+        }
+        .gallery img:first-child {
+            display: block;
+        }
+        .gallery.expanded img {
+            display: block;
+        }
     </style>
+	<script>
+        function toggleGallery() {
+            var gallery = document.querySelector('.gallery');
+            gallery.classList.toggle('expanded');
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -114,10 +135,12 @@
             <div class="category">
                 <div class="clocks">
                     <div class="clock">
-                                <img src="/Longines.png" alt="Longines">
-                            </a>
+                        div class="gallery" onclick="toggleGallery()">
+                        <img src="/Longines.png" alt="Longines">
+                        <img src="/Longines2.png" alt="Longines 2">
+                        <img src="/Longines3.png" alt="Longines 3">
+                    </div>
                             <p><strong>Longines Flagship</strong></p>
-                        <p>Vakker Longines Flagship fra 60-tallet.</p>
 			    <p>Spesifikasjoner:</p>
                             <ul>
 				<li>Urverk: 30LS. Manuelt opptrekk.</li>                                

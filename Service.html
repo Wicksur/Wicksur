@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wicksur</title>
+    <link rel="icon" type="image/x-icon" href="wicksur.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5dc; /* Lys beige bakgrunn */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #000000, #333333); /* Svart gradient */
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #d2b48c 3px solid; /* Lys brun kant */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+        header a {
+            color: inherit; /* Inherit the color from the parent element */
+            text-decoration: none; /* Remove underline */
+        }
+        .info {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .info h2 {
+            text-align: center;
+            color: #5a3d1a;
+        }
+        .clock-gallery {
+            margin-top: 20px;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category h2 {
+            text-align: center;
+            color: #5a3d1a;
+            margin-bottom: 20px;
+        }
+        .clocks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .clock {
+            background: #fff;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            border: 1px solid #d2b48c; /* Lys brun kant */
+        }
+        .clock:hover {
+            transform: scale(1.05);
+        }
+        .clock img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .clock p {
+            margin: 10px 0 0;
+            font-size: 16px;
+            color: #333;
+        }
+        footer {
+            background: #000000; /* Svart bakgrunn */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://wicksur.no">
+            <h1>Wicksur</h1>
+        </a>
+    </header>
+    <div class="container">
+        <div class="info">
+            <h2>Om klokkemods</h2>
+            <p>Under finner du klokkemods til salgs. Alle er bygget av meg med solide Seiko-urverk.Ved å trykke på bildet av klokkene blir du videresendt til salgsannonse på finn.</p> 
+			<p>Å bygge en Seiko-mod starter ofte med et pålitelig urverk, som Seiko NH35a. 
+			Fra dette grunnlaget kan man tilpasse klokken ved å legge til tredjepartsdeler som urskive, visere, bezel, krone og lenke. 
+			Disse delene velges for å gi klokken et unikt utseende og funksjonalitet. 
+			Prosessen innebærer nøye montering og justering for å sikre at alle komponentene fungerer sømløst sammen. 
+			Resultatet er en personlig tilpasset klokke som kombinerer Seikos pålitelighet med eierens individuelle stil.</p>
+        </div>
+        <div class="clock-gallery">
+            <div class="category">
+                <h2>Mods til salgs</h2>
+                <div class="clocks">
+                    <div class="clock">
+                            <a href="https://www.finn.no/bap/forsale/ad.html?finnkode=363365818" target="_blank">
+                                <img src="Guinness.png" alt="Klikk her for å kjøpe klokken">
+                            </a>
+                            <p><strong>Klikk på bildet for å sendes til finn annonse!</strong></p>
+                        <p>Elegant klokke inspirert av Guinness øl med en håndlaget sort lærreim.</p>
+			    <p>Spesifikasjoner:</p>
+                            <ul>
+				<li>Urverk: Seiko NH35</li>                                
+				<li>36mm u/ krone</li>
+                                <li>20mm håndlaget skinnreim</li>
+                                <li>Safirglass</li>
+                                <li>Klokken kommer i en stilig boks</li>
+                            </ul>
+                    </div>
+                        <div class="clock">
+                            <a href="https://www.finn.no/recommerce/forsale/item/376642721?" target="_blank">
+                                <img src="DatejustG.jpg" alt="Klikk her for å kjøpe klokken">
+                            </a>
+                            <p><strong>Klikk på bildet for å sendes til finn annonse!</strong></p>
+                            <p>Datejust two tone homage.</p>
+                            <p>Denne klokken kan brukes både til formelle anledninger og hverdag. Kanskje den perfekte gaven?</p>
+                            <p>Spesifikasjoner:</p>
+                            <ul>
+				<li>Urverk: Seiko NH35</li>                                
+				<li>36mm u/ krone</li>
+                                <li>20mm lenke basert på jubilee</li>
+                                <li>Safirglass</li>
+                                <li>Innebygd hurtigjustering i spennen på lenken (Glidelock)</li>
+                                <li>Klokken kommer i en stilig boks</li>
+                            </ul>
+         	   </div>
+    	    </div>
+  	  </div>
+    <footer>
+        <p>2024 Wicksur. En del av rettighetene er reservert.</p>
+        <p>Kontakt:</p>
+        <p>E-post:Ikke helt klar</p>
+    </footer>
+</body>
+</html>
